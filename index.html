@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Troca a cor ai</h1>
+    
+        <button onclick="changeColor('red')">Vermelho</button>
+        <button onclick="changeColor('green')">Verde</button>
+        <button onclick="changeColor('blue')">Azul</button>
+        <button onclick="changeColor('yellow')">Amarelo</button>
+        <button onclick="colorRandom()">Cor Aleatória</button>
+        <br>
+        <input type="text" placeholder="Nome da cor ou #HEX" class="inputColor">
+        <button onclick="changeColorInput()">Aplicar cor</button>
+        <input type="color" onchange="changeColor(this.value)">
+        <br>
+        <label>
+            Escolher imagem
+            <input  type="file" accept="image/*" onchange="changeImage()"> 
+        </label>
+
+    </main>
+
+
+    <script src="./src/scripts/scripts.js"></script>
+</body>
+
+</html>
